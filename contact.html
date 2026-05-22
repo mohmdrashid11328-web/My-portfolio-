@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Contact
+    </title>
+    <style>
+        /*====PAGE STYLE====*/
+        body {
+            font-family: Arial;
+            background: #4676a9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: normal;
+            color: rgba(0, 6, 189, 0.826);
+        }
+
+        header h2 {
+            margin: 10px 0 0 0;
+            font-size: 1.5em;
+            font-weight: normal;
+            color: #283c83
+        }
+
+        /*==== ORIGINAL navigation bar====*/
+        .navbar {
+            background: #28837b;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .navbar a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            background-color: bisque;
+            padding: 5px 10px;
+        }
+
+        /*====MAIN BOX====*/
+        .container {
+            width: 80%;
+            margin: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .section nav {
+            text-decoration: #4d1d70;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /*====FORM====*/
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+        }
+
+        /*style div*/
+        .link-box {
+            padding: 20px;
+            color: whitesmoke;
+        }
+
+        /*style link*/
+        .color-link {
+            color: brown;
+            font-weight: bold;
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            background-color: #283c83;
+        }
+
+        .success {
+            color: green;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<section>
+    <h3 id="Contact">Contact Form</h3>
+    <form id="contactForm" action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <span id="nameError" class="error"></span><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <span id="emailError" class="error"></span><br><br>
+
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br><br>
+        <span id="messageError" class="error"></span><br><br>
+
+
+        <input type="submit" value="Submit">
+    </form>
+    <p id="successBox"></p>
+</section>
+<script src="form.js"></script>
+</body>
+
+</html>
